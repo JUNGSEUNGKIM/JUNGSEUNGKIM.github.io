@@ -134,7 +134,7 @@
 
             // innerText를 사용하여 HTML 태그를 제거한 텍스트를 가져옵니다.
             // const cleanedMessage = temporaryElement.text();
-            const cleanedMessage = message.replace(/<[*>]*>/g,'')
+            const cleanedMessage = message.replace(/<[^>]*>/g,'')
             textToSpeech(cleanedMessage)
         }
 
